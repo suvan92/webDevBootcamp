@@ -1,0 +1,12 @@
+body {
+    background: orange;
+}
+
+#important{
+    color: yellow;
+    background-color: chartreuse;
+}
+
+.completed{
+    text-decoration: line-through;
+}
