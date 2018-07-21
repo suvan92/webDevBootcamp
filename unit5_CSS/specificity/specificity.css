@@ -1,0 +1,15 @@
+/* 
+    The style applied to an element is the one that is most specific
+
+    in this case all elements within the body that are not ul will be red
+    And everything within ul will be purple
+
+*/
+
+body {
+    color: red;
+}
+
+ul {
+    color: purple;
+}
