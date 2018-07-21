@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables Demo</title>
+</head>
+
+<body>
+    <div>
+        <!-- This is the <table> element. It is not common now to use the border attribute within the table tag. All styling in HTML5 is now done in CSS.
+        The <tr> tag denotes a table row. The <td> tag denotes a table element -->
+        <table border="1">
+            <tr>
+                <td>Red</td>
+                <td>Orange</td>
+            </tr>
+
+            <tr>
+                <td>Green</td>
+                <td>Yellow</td>
+            </tr>
+        </table>
+    </div>
+
+    <p></p>
+
+    <div>
+
+        <!-- Say we want a table like this:
+        Name    Age
+        ===========
+        Rusy    2
+        Wyatt   13
+    -->
+
+        <!-- The <th> tag denotes a table header. It must also be wrapped in a <tr> tag -->
+        <!-- To make the HTML more clear, it is common practice to wrap the header row in a <thead> tag and the body elements in a <tbody> tag. This will not effect the appearance of the table, but it does make the html more readable -->
+
+        <table border="1">
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Breed</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Rusy</td>
+                    <td>2</td>
+                    <td>Mutt</td>
+                </tr>
+                <tr>
+                    <td>Wyatt</td>
+                    <td>13</td>
+                    <td>Golden Retriever</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+</body>
+
+</html>

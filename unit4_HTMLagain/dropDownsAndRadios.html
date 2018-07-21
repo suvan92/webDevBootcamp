@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drop Downs and Radios</title>
+</head>
+
+<body>
+
+    <p>Do you prefer cats or dogs?</p>
+
+    <!-- <form>
+
+        With this set up current state both dogs and cats can be selected
+
+        <label for="dogs">Dogs:</label>
+        <input type="radio" id="dogs">
+
+        <label for="cats">Cats:</label>
+        <input type="radio" id="cats">
+
+    </form> -->
+
+    <form>
+
+        <!-- In order to make these mutually exclusive they must have the same name which makes them compete for a spot in the json -->
+
+        <!-- IMPORTANT: Without the 'value' attribute the radio button will default the selection to true/on, not the value indicated by the label This must be set manually using the value tag to send the actual value in the request -->
+
+        <label for="dogs">Dogs:</label>
+        <input name="petChoice" type="radio" id="dogs" value="dogs">
+
+        <label for="cats">Cats:</label>
+        <input name="petChoice" type="radio" id="cats" value="cats">
+
+        <p></p>
+
+        <!-- SELECT TAGS -->
+         <!-- The <select> tag is used for dropdown menus -->
+             
+        <p>What's your favorite colour?</p>
+
+        <!-- The key is specified in the select tag -->
+        <select name="favColour">
+            <!-- For each element use the <option> tag -->
+
+                <!-- Values for each option are specified in the option tag -->
+                <!-- If there is no value specified, the text inside the option tags is used as the value in the key/value pair -->
+                <option>Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+
+        </select>
+
+        <!-- The last type of form covered in this lecture is the textArea tag -->
+        <!-- The size of the text area are specified by the cols (columns) and rows attributes -->
+
+        <p></p>
+
+        <textarea name="textArea" cols="50" rows="10" placeholder="Enter lots of text"></textarea>
+
+        <!-- If the button is the last tag in a form, it will submit the form -->
+        <button>Go!</button>
+
+    </form>
+
+</body>
+
+</html>

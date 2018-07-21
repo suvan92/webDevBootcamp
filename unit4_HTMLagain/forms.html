@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Demo</title>
+</head>
+
+<body>
+    <!-- The form tag is a way to group inputs from a user together.
+        -The 'action' attribute is the path to send all the components of the form once it is completed
+        -The 'method' attribute specifies which HTTP method is required for the submission (GET, POST, PATCH, etc)
+
+        The action attribute defaults to the current path
+        The method attribute defaults to GET
+     -->
+
+    <div>
+        <form action="/my-form-submitting-page">
+
+            <!-- The <input> tag is a component of the <form> tag. The 'type' attribute specifies what kind of input it expects -->
+            <input type="text">
+
+            <input type="date">
+
+            <input type="color">
+
+            <input type="file">
+
+            <input type="checkbox">
+
+        </form>
+
+    </div>
+
+    <div>
+
+        <h1>Sign In</h1>
+        
+        <form>
+            
+            <!-- The key for the value specified in an input tag can be set using the 'name' attribute -->
+            <input name="username" type="text" placeholder="Username">
+
+            <input name="password" type="password" placeholder="Password">
+
+            <!-- You can either create a submit button using the <button> tag or specifying type 'submit' on an input tag -->
+
+            <!-- <button>Login</button> -->
+
+            <input type="submit">
+        
+        </form>
+
+        <!-- It is important to note that input tags can exist outside of <form>. However, it makes it more complicated to group bits of information once a submit button is pressed. -->
+
+    </div>
+
+    <p></p>
+
+    <div>
+
+        <!-- There are two ways of using the <label> Tag -->
+        <!-- Label tags are important because they are what 'ScreenReaderSoftware' will use to help visually impaired users navigate the page -->
+        
+        <!-- There are two ways of using the <label> tag -->
+        
+        <!-- METHOD 1: -->
+        <form action="sign-in-url" method="post">
+
+            <label>
+                Username:
+                <input type="text" placeholder="Username">
+            </label>
+            
+            <label>
+                Password:
+                <input type="password" placeholder="Password">
+            </label>
+
+            <button>Login</button>
+
+        </form>
+
+        <p></p>
+
+        <!-- METHOD 2: -->
+
+        <form action="sign-in-url" method="post">
+            
+            <label for="username">Username:</label>
+            <input id="username" type="text" placeholder="Username">
+
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="Password">
+                            
+            <input type="submit">
+                
+        </form>
+
+
+    </div>
+
+
+</body>
+
+</html>

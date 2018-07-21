@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+
+<body>
+
+    <h1>Register</h1>
+
+    <form>
+
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="firstName" name="lastName" placeholder="Smith" required>
+        </div>
+
+        <div>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+
+        </div>
+
+        <div>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="your email" required>
+
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="your password" required pattern=".{5,10}" title="Must be between 5 and 10 characters">
+            
+        </div>
+
+        <div>
+
+            <label for="birthday">Birhday:</label>
+            <input type="date" name="birthday" id="birthday" required>
+
+        </div>
+
+        <div>
+
+            <label for="termsAndConditions">I agree to the terms and conditions</label>
+            <input type="checkbox" name="termsAndConditions" id="termsAndConditions" required>
+
+        </div>
+
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>

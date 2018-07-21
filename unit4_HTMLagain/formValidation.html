@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <div>
+
+        <h1>Form Validation</h1>
+
+        <form>
+
+            <!-- The required attribute adds validation based on the <input type> -->
+            <!-- The required is a boolean attribute. It's presence is enough to set it to true -->
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+
+            <input type="submit">
+
+        </form>
+
+        <!-- Not all browsers will have a built in alert message for the required tag. Chrome is awesome and will do that -->
+
+    </div>
+
+</body>
+</html>
