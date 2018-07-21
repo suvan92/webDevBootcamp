@@ -1,0 +1,78 @@
+/* Elements */
+li{
+
+}
+
+/* class */
+
+.hello{
+
+}
+
+/* id */
+
+#name{
+
+}
+
+/* Star selector
+
+    The star selector selects all elements on the page
+    including body, head, headers, the list itself, as well as the elements
+    within the list
+
+    Quite rare to use this selector
+
+*/
+
+* {
+    border: 1px solid lightgray;
+}
+
+/* Descendent selector 
+
+    The descendent selector selects all instances of the second tag
+    within the first tag
+    In the example below all anchor tags (<a>) within <li> tags will
+    be affected.
+    This is not limited to elements
+
+    Another option is:
+    
+    ul li a
+
+*/
+
+li a {
+    color: red;
+}
+
+/* Adjacent selector 
+
+    The adjacent selector selects elements of the second type
+    that are on the same level as and proceed the first type
+
+*/
+
+h4 + ul {
+    border: 4px solid red;
+}
+
+/* Attribute selector */
+
+a[href="https://www.google.ca"] {
+    background: blue;
+}
+
+/* nth of type 
+    even or odd as an argument selects every even or odd tag
+    a number will select the argument number from every group
+*/
+
+li:nth-of-type(even) {
+    background: lightskyblue;
+}
+
+li:nth-of-type(3) {
+    background: darkcyan;
+}
