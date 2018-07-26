@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cat-me": "^1.0.3",
+    "knock-knock-jokes": "^1.7.0"
+  }
+}
