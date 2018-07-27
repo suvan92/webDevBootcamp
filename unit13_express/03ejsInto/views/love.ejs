@@ -1,3 +1,9 @@
 <h1>You fell in love with <%= subject %></h1>
 
-<p>This is an .ejs file</p>
+<% if(subject.toLowerCase() === "soccer") { %>
+    <p>Good choice! Soccer is awesome</p>
+<% } else { %>
+    <p>Bad choice! You should have said soccer</p>
+<% } %>
+
+<p>This is the love.ejs file</p>
