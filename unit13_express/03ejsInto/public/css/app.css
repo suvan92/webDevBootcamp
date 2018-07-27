@@ -1,0 +1,11 @@
+body {
+    background: yellow;
+    color: steelblue;
+}
+
+#trademark {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10;
+    color: gray;
+}
